@@ -66,7 +66,7 @@ pool.on("error", (err, client) => {
 module.exports.pool = pool;
 ```
 
--- now we can use our database in server, in `server.js`, we can define `const db = require('./db');`, then we can call sql query by using `db.pool.query('query').then(response)` in express.
+- now we can use our database in server, in `server.js`, we can define `const db = require('./db');`, then we can call sql query by using `db.pool.query('query').then(response)` in express.
 
 - and in next step, we will setup our frontend; `npx create-react-app client `: create a frontend 'client' using create-react-app; after installed, you can follow the README.md in client folder to start your frontend.
 
